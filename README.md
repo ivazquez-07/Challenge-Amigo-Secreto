@@ -24,7 +24,7 @@ Contamos con 3 archivos principales:
 
 y una carpeta donde tenemos de forma local las imágenes que se visualizaran en nuestra página web del Challenge <i>Amigo Secreto</i> llamada "assets".
 </p>
-
+<p align="center"><img src="img/2025-02-07_13-10-39_EstructuraVCS.png"></p>
 <p align="left"><img src="https://img.shields.io/badge/STATUS:%20-EN%20DESAROLLO-yellow"></p>
 
 <h2>Descripción del archivo HTML</h2>
