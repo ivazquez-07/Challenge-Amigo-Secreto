@@ -1,7 +1,7 @@
-<h1>Reto del proyecto: Crear un proyecto llamado <i>"Amigo Secreto"</i></h1>
+<h1>Challenge <i>"Amigo Secreto"</i></h1>
 
-<h2>Crear un repositorio en GitHub</i></h2>
-<p>Como primero paso creamos un repositorio público en GitHub donde vamos a guardar los archivos de nuestro proyecto llamado <i>"Amigo Secreto". Este proyecto es un Challenge que tenemos que cumplir para continuar con el curso de ONE - Alura Latam, llamado "Principiante en Programación G8 - ONE".
+<h2>Crear un repositorio en GitHub</h2>
+<p>Como primero paso creamos un repositorio público en GitHub donde vamos a guardar los archivos de nuestro proyecto llamado <i>"Amigo Secreto"</i>. Este proyecto es un Challenge que tenemos que cumplir para continuar con el curso de ONE - Alura Latam, llamado "Principiante en Programación G8 - ONE".
 
 <b>Principiante en Programación G8 - ONE</b> Es una guía básica inicial para quien desea entrar en el universo de programación y comenzar con la creación de páginas web utilizando los lenguajes populares de HTML, CSS y JavaScript.
 </p>
