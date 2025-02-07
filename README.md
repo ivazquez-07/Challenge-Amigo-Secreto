@@ -4,4 +4,8 @@
 </p>
 <p>Como reto adicional, crea un README para tu proyecto de "Amigo Secreto" detallando sus funcionalidades, incluyendo capturas de pantalla o videos que muestren cómo agregar nombres y realizar el sorteo. Esta práctica mejorará la documentación, y hará que tu proyecto sea más accesible y profesional para la comunidad.</p>
 
-<p align="left"><img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-yellow"></p>
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
+
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-EN%20DESAROLLO-yellow"></p>
+
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-LISTO-green"></p>
