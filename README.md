@@ -40,9 +40,11 @@ Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará a
 <p>La siguiente imagen muestra como está estructurado este proyecto. 
 Contamos con 3 archivos principales:
 
-<ul>index.html</ul> Archivo HTML. Contiene la estructura o armazón de nuestra página web.
-<ul>app.js</ul> Archivo de JavaScript. Aquí se definen las variables y funciones que dan vida al desafío.
-<ul>styles.css</ul> Hoja de estilos. Aquí se definen la estética de nuestra página.
+<ul>
+  <li><b>index.html</b>  Archivo HTML. Contiene la estructura o armazón de nuestra página web.</li>
+  <li><b>app.js</b>  Archivo de JavaScript. Aquí se definen las variables y funciones que dan vida al desafío.</li>
+  <li><b>styles.css</b>  Hoja de estilos. Aquí se definen la estética de nuestra página.</li>
+</ul>
 
 y una carpeta donde tenemos de forma local las imágenes que se visualizaran en nuestra página web del Challenge <i>Amigo Secreto</i> llamada "assets".
 </p>
