@@ -13,11 +13,7 @@ para el Challenge: Amigo Secreto.
 2025-02-07_IV: El formato de mis comentarios será utilizando la fecha, guión bajo y mis iniciales.
 */
 
-
 //2025-02-07_IV: Definición de Variables
-
-
-
 
 
 
