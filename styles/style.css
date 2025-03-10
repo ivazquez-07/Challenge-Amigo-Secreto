@@ -1,3 +1,8 @@
+/* 2025-02-18_IV: Esta es la hoja de estilos que sirve para darle belleza a nuestro Challenge */
+/* Acá se definen los tipos de fuentes cuando las importamos por ejemplo de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Definición de variables en CSS */
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
@@ -8,11 +13,14 @@
     --color-white: #FFFFFF;
 }
 
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset de estilos previo a usar mis propios estilos */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
