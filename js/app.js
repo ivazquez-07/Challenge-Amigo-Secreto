@@ -17,17 +17,90 @@ Aquí deberás desarrollar la lógica para resolver el problema.
 // 2025-02-07_IV: El formato de mis comentarios será utilizando la fecha, guión bajo y mis iniciales.
 
 // 2025-02-19_IV: Definición de Variables
+let amigos = [];
+let amigosSorteados = [];
 
 
 // 2025-02-07_IV: Definición de Funciones
 function agregarAmigo() {
   // 2025-03-01_IV: Esta función será la encargada de tomar los datos del formulario y guardarlos en un array de nombres.
-  console.log("Se hizo click en el botón agregar amigo");
+  console.log("Se hizo click en el botón Agregar Amigo");
+
+  /* El uso de expresiones regulares me ayuda a validar nombres en español o castellano donde tenemos 
+  caracteres especiales y evitar a su vez que ingresen nombres de forma extrañana o con errores */
+  // const regExpNombre = /([\sA-Za-zñÑáÁéÉíÍóÓöÖúÚüÜ]+)/g;
+
+  let nombre;
+  try {
+    //nombre = regExpNombre.exec(document.getElementById('amigo').value)[1].toString().trim();
+    nombre = document.getElementById('amigo').value.toString().trim();
+    // console.log(document.getElementById('amigo') + " --> getElementbyId");
+    // console.log(document.getElementById('amigo').value + " --> value");
+    // console.log(document.getElementById('amigo').value.toString() + " --> toString");
+    // console.log(document.getElementById('amigo').value.toString().trim() + " --> trim");
+    // console.log(regExpNombre.exec(document.getElementById('amigo').value)[1] + " --> regularExp");
+    // console.log(typeof nombre + " --> typeOf");
+  } catch (excep) {
+    console.log("La excepción de este error es: " + excep);
+  }
+
+  if ((typeof nombre === 'string') && (nombre !== null && nombre !== '')) {
+    if (!amigos.includes(nombre)) {
+      amigos.push(nombre);
+      console.log(`El amigo agregado se llama ${nombre} y ocupa la posición ${amigos.length}`);
+    } else {
+      alert(`El amigo de nombre ${nombre} ya existe en la lista y ocupa la posición ${amigos.indexOf(nombre) + 1}`);
+    }
+    document.getElementById('amigo').value = '';
+    mostrarLista();
+  } else {
+    alert("¡Por favor, ingrese un nombre!");
+  }
+
+  return;
+}
+
+/* Reutilización de funciones de otros ejercicios */
+function asignarTextoElemento(elemento, texto) {
+  let elementoHTML = document.getElementById(elemento);
+  elementoHTML.innerHTML = texto;
+  return;
+}
+
+function mostrarLista() {
+  var listElement;
+  var  textElement;
+  asignarTextoElemento('resultado', '');
+  document.getElementById('listaAmigos').removeAttribute('disabled');
+  console.log("Se habilita la lista de Amigos");
+  document.getElementById('resultado').setAttribute('disabled', 'true');
+  console.log("Se deshabilita el resultado del sorteo");
+  asignarTextoElemento('listaAmigos', 'Lista de Amigos:');
+
+  for (let i = 0; i < amigos.length; i++) {
+    console.log(`Amigo ${i + 1} es ${amigos[i]}`);
+    listElement = document.createElement('li');
+    textElement = document.createTextNode(amigos[i]);
+    listElement.appendChild(textElement);
+    document.getElementById('listaAmigos').appendChild(listElement);
+  }
+
+  return;
 }
 
 function sortearAmigo() {
   // 2025-03-01_IV: Esta función será la encargada de generar en forma aleatoria la asociación del amigo secreto.
   console.log("Se hizo click en el botón sortear amigo");
+  document.getElementById('resultado').removeAttribute('disabled');
+  console.log("Se habilita el resultado del sorteo");
+  document.getElementById('listaAmigos').setAttribute('disabled', 'true');
+  console.log("Se deshabilita la Lista de Amigos");
+  if (amigos.length > 0) {
+    asignarTextoElemento('listaAmigos', '');
+    console.log(`En el Array amigos tenemos estos elementos: ${amigos}`);
+    asignarTextoElemento('resultado', 'El Amigo asignado por el sorteo es:');
+  }
+  return;
 }
 
 
