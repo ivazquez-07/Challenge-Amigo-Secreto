@@ -69,7 +69,7 @@ function asignarTextoElemento(elemento, texto) {
 
 function mostrarLista() {
   var listElement;
-  var  textElement;
+  var textElement;
   asignarTextoElemento('resultado', '');
   document.getElementById('listaAmigos').removeAttribute('disabled');
   console.log("Se habilita la lista de Amigos");
