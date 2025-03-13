@@ -7,6 +7,10 @@ En este desafío, desarrollarás una aplicación que permita a los usuarios ingr
 El usuario deberá agregar nombres mediante un campo de texto y un botón "Adicionar". Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón "Sortear Amigo" seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
 </p>
 
+<h2>Foco en la lógica</h2>
+<p>El objetivo principal de este desafío es desarrollar habilidades en lógica de programación, por eso hemos proporcionado el HTML y CSS ya preparados. De esta manera, puedes enfocarte exclusivamente en construir la lógica del código JavaScript, aplicando conceptos clave como funciones, arrays, condicionales y variables. Esto te permitirá centrarte en resolver el problema y mejorar el razonamiento lógico, sin preocuparse por la estructura visual del proyecto.
+</p>
+
 <h2>Fucionalidades:</h2>
 <p>
 Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
@@ -48,18 +52,68 @@ Contamos con 3 archivos principales:
 
 y una carpeta donde tenemos de forma local las imágenes que se visualizaran en nuestra página web del Challenge <i>Amigo Secreto</i> llamada "assets".
 </p>
-<p align="center"><img src="img/2025-02-07_13-10-39_EstructuraVCS.png"></p>
+<p align="center"><img src="assets/2025-02-07_13-10-39_EstructuraVCS.png"></p>
 <p align="left"><img src="https://img.shields.io/badge/STATUS:%20-EN%20DESAROLLO-yellow"></p>
 
 <h2>Descripción del archivo HTML</h2>
 
+<p>HTML define la estructura de tu página web y su contenido</p>
+
+<p>Su nombre proviene del inglés Hyper Text Markup Language, que significa "lenguaje de marcado de hipertexto".
+HTML no se considera un lenguaje de programación como los demás y ya sabrás por qué.
+
+Imagínate una página web, como la que estás leyendo ahora mismo. Puedes ver que hay varios elementos separados, como encabezado, título, párrafos, imágenes y tantos otros. Toda la organización de estos elementos se realiza mediante HTML. Se utiliza para crear toda la estructura de la página y, para ello, utiliza las famosas tags (etiquetas) para indicar dónde se implementará cada tipo de elemento.
+
+Eexisten varias tags de diferentes estructuras para ensamblar el esqueleto de la página
+</p>
+
 <p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
 
-<h2>Descripción del archivo JS</h2>
-
-<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
 
 <h2>Descripción del archivo CSS</h2>
 
+<p>CSS se encarga del diseño y la presentación</p>
+
+<p>
+Cascading Style Sheet, más conocido como CSS, es un lenguaje de estilos que, como HTML, tampoco se considera un lenguaje de programación. Es la encargada de separar la parte estructural de la aplicación (que estará en manos de HTML) de la parte estética.
+
+Para usar CSS, usamos la siguiente sintaxis:
+
+<p style="font-family: monospace; font-size: 12px; gap: 10px;";>
+selector {  
+    propiedad: valor;
+}
+</style>
+El selector será el elemento que queramos estilizar (podría ser una tag, una clase, un identificador ...), la propiedad será lo que vamos a cambiar (como color, tamaño de fuente, ancho ...) y el valor será realmente el cambio (como: rojo para color, 18px para tamaño de fuente, y así por delante).
+
+Entonces, cuando usamos una tag HTML como la tag <p> que usamos como ejemplo anterior, podemos diseñarla de la siguiente manera:
+
+p {  
+    color: blue;
+}
+Con eso, todos los párrafos se volverán azules.
+
+Un dato más interesante: si traducimos el nombre de esta tecnología, tendremos “hoja de estilo en cascada”. ¿Qué significa eso?
+
+CSS se puede escribir dentro del archivo HTML, usando el estilo como elemento <style> o como atributo de algún otro elemento <p style="">. También se puede escribir en un archivo separado, solo CSS, importándolo al documento HTML de la siguiente manera:
+
+
+Sin embargo, algo muy importante a destacar es la posibilidad de utilizar más de un archivo CSS al mismo tiempo, para estilizar la aplicación. De ahí la palabra "cascada". Esto permite varias interacciones diferentes, pero debes tener cuidado de no perderte y confundir el código, siempre siguiendo las reglas para esto.
+
+
+</p>
+
+
 <p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
 
+
+<h2>Descripción del archivo JS</h2>
+
+<p>JavaScript se utiliza para añadir interacción y dinamismo</p>
+
+<p></p>
+
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
+
+
+<i>Fuente: https://www.aluracursos.com/blog/html-css-javascript-cuales-son-las-diferencias</i>
