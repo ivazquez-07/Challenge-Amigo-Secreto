@@ -79,11 +79,12 @@ Cascading Style Sheet, más conocido como CSS, es un lenguaje de estilos que, co
 
 Para usar CSS, usamos la siguiente sintaxis:
 
-<p style="font-family: monospace; font-size: 12px; gap: 10px;";>
+<code style="font-family: monospace; font-size: 12px; gap: 10px;display: block;overflow-x: auto;padding: .5em;color: #383a42;background: #fafafa;";>
 selector {  
     propiedad: valor;
 }
-</style>
+</code>
+
 El selector será el elemento que queramos estilizar (podría ser una tag, una clase, un identificador ...), la propiedad será lo que vamos a cambiar (como color, tamaño de fuente, ancho ...) y el valor será realmente el cambio (como: rojo para color, 18px para tamaño de fuente, y así por delante).
 
 Entonces, cuando usamos una tag HTML como la tag <p> que usamos como ejemplo anterior, podemos diseñarla de la siguiente manera:
