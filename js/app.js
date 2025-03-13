@@ -68,8 +68,10 @@ function asignarTextoElemento(elemento, texto) {
 }
 
 function mostrarLista() {
+  // 2025-03-01_IV: Esta función será la encargada de ir agregando a un array los amigos que se ingresen en el input text.
   var listElement;
   var textElement;
+
   asignarTextoElemento('resultado', '');
   document.getElementById('listaAmigos').removeAttribute('disabled');
   console.log("Se habilita la lista de Amigos");
@@ -90,6 +92,9 @@ function mostrarLista() {
 
 function sortearAmigo() {
   // 2025-03-01_IV: Esta función será la encargada de generar en forma aleatoria la asociación del amigo secreto.
+  // var listElement;
+  // var textElement;
+
   console.log("Se hizo click en el botón sortear amigo");
   document.getElementById('resultado').removeAttribute('disabled');
   console.log("Se habilita el resultado del sorteo");
@@ -98,8 +103,29 @@ function sortearAmigo() {
   if (amigos.length > 0) {
     asignarTextoElemento('listaAmigos', '');
     console.log(`En el Array amigos tenemos estos elementos: ${amigos}`);
+    ////2025-03-03_IV: Para el sorteo utilizamos la función Math.random
+    let posicionAmigo = Math.floor(Math.random() * amigos.length);
+
+    console.log(`El Amigo sorteado es el de la posición ${posicionAmigo} y su nombre es ${amigos[posicionAmigo]}`);
+
     asignarTextoElemento('resultado', 'El Amigo asignado por el sorteo es:');
+    //2025-03-11_IV: Se agrega el amigo elegido a una nueva lista para mostrar los que fueron ya sorteados
+    amigosSorteados.push(amigos[posicionAmigo]);
+    //2025-03-11_IV: Se quita el amigo ya elegido de la lista original, de esta forma se puede sortear de nuevo
+    amigos.splice(posicionAmigo, 1);
+
+    //2025-03-11_IV: Se coloca esta variante para mostrar la lista de los amigos sorteados (en caso que se presionen n veces el botón sortear)
+    for (let i = 0; i < amigosSorteados.length; i++) {
+      console.log(`El Amigo sorteado ${i + 1} es ${amigosSorteados[i]}`);
+      listElement = document.createElement('li');
+      textElement = document.createTextNode(amigosSorteados[i]);
+      listElement.appendChild(textElement);
+      document.getElementById('resultado').appendChild(listElement);
+    }
+  } else {
+    alert("¡Debe agregar amigos a su lista para ser sorteados!");
   }
+
   return;
 }
 

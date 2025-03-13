@@ -13,6 +13,7 @@
     --color-white: #FFFFFF;
     /* 2025-03-08_IV: Fuentes */
     --fuente-merriweather: "Merriweather", serif;
+    --fuente-inter: "Inter", sans-serif;
 }
 
 /* 2025-02-27_IV: Reset de estilos previo a usar mis propios estilos */
@@ -117,7 +118,7 @@ body {
 /* Estilos de botón */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-inter);
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
@@ -139,9 +140,20 @@ button {
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    /* margin: 24px 0; */
+    align-items: center;
+}
+
+/* 2025-03-10_IV: Agregamos un estilo para la lista ordenada */
+ol {
+    list-style-type: decimal-leading-zero;
+    color: var(--color-text);
+    font-family: var(--fuente-inter);
     font-size: 18px;
-    margin: 20px 0;
+    align-items: center;
+    /* margin: 20px 0; */
 }
 
 .result-list {
