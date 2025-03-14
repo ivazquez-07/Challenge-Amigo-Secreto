@@ -55,7 +55,7 @@ y una carpeta, llamada "assets", donde tenemos de forma local las imágenes que 
 
 <p align="center"><img src="assets/imagen_estructura_proyecto.png"></p>
 
-<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-EN%20DESAROLLO-yellow"></p>
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-LISTO-green"></p>
 
 <h2>Descripción del archivo HTML</h2>
 
@@ -85,11 +85,9 @@ Existen varios tags de diferentes estructuras para ensamblar el esqueleto de la 
 
 Para usar CSS, usamos la siguiente sintaxis:
 
-<code style="font-family: monospace;font-size: 12px;gap: 10px;display: block;overflow-x: auto;padding: .5em;color: #383a42;background: #fafafa;">
-  selector {  
-    propiedad: valor;
-  }
-</code>
+<code style="font-family: monospace;font-size: 12px;gap: 10px;display: block;overflow-x: auto;padding: .5em;color: #383a42;background: #fafafa;">selector {  
+  propiedad: <i>valor;</i>
+}</code>
 
 El selector será el elemento que queramos estilizar (podría ser una tag, una clase, un identificador, etc), la propiedad será lo que vamos a cambiar (como color, tamaño de fuente, ancho ...) y el valor será realmente el cambio (como: rojo para color, 18px para tamaño de fuente, y así por delante).
 
