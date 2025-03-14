@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- 2025-02-27_IV: Reset de estilos previo a usar mis propios estilos -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- 2025-02-27_IV: Hoja de estilos proporcionada por Alura y reubicada en el folder correspondiente -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,25 +26,27 @@
     <main class="main-content">
         <header class="header-banner">
             <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
+            <img class="main-image" src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
         </header>
 
         <section class="input-section">
             <h2 class="section-title">Ingrese el nombre de sus amigos</h2>
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre" onsubmit="agregarAmigo();">
                 <button class="button-add" onclick="agregarAmigo();">Añadir</button>
             </div>
 
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ol id="resultado" class="result-list" aria-live="polite"></ol>
-
+            
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo();" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
             </div>
+            
+            <ol id="resultado" class="result-list" aria-live="polite"></ol>
+            
         </section>
     </main>
 

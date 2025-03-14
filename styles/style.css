@@ -16,16 +16,6 @@
     --fuente-inter: "Inter", sans-serif;
 }
 
-/* 2025-02-27_IV: Reset de estilos previo a usar mis propios estilos */
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 body {
     height: 100vh;
     background-color: var(--color-primary);
@@ -142,7 +132,7 @@ ul {
     color: var(--color-text);
     font-family: var(--fuente-inter);
     font-size: 16px;
-    /* margin: 24px 0; */
+    margin: 24px 0; */
     align-items: center;
 }
 
@@ -153,11 +143,11 @@ ol {
     font-family: var(--fuente-inter);
     font-size: 18px;
     align-items: center;
-    /* margin: 20px 0; */
+    margin: 20px 0; */
 }
 
 .result-list {
-    margin-top: 15px;
+    margin: 15px;
     color: #05DF05;
     font-size: 22px;
     font-weight: bold;
@@ -181,4 +171,27 @@ ol {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Adaptación responsiva para móviles 
+Los tipos de medios definen la amplia categoría de dispositivos para los que se aplica la consulta de medios: all, print, screen.
+El tipo es opcional (se asume que es all) excepto cuando se usan los operadores lógicos not o only.
+*/
+/* @media only screen and ( max-width: 992px) { */
+@media (max-width: 992px) {
+    .main-content {
+        width: auto;
+    }
+
+    .main-image {
+        height: 75%;
+    }
+
+    .header-banner {
+        flex-direction: column-reverse;
+        padding: 2%;
+        justify-content: center;
+    }
+
+
 }

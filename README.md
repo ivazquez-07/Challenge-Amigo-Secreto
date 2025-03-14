@@ -50,71 +50,72 @@ Contamos con 3 archivos principales:
   <li><b>styles.css</b>  Hoja de estilos. Aquí se definen la estética de nuestra página.</li>
 </ul>
 
-y una carpeta donde tenemos de forma local las imágenes que se visualizaran en nuestra página web del Challenge <i>Amigo Secreto</i> llamada "assets".
+y una carpeta, llamada "assets", donde tenemos de forma local las imágenes que se visualizaran en nuestra página web del Challenge <i>Amigo Secreto</i>.
 </p>
-<p align="center"><img src="assets/2025-02-07_13-10-39_EstructuraVCS.png"></p>
+
+<p align="center"><img src="assets/imagen_estructura_proyecto.png"></p>
+
 <p align="left"><img src="https://img.shields.io/badge/STATUS:%20-EN%20DESAROLLO-yellow"></p>
 
 <h2>Descripción del archivo HTML</h2>
 
 <p>HTML define la estructura de tu página web y su contenido</p>
 
-<p>Su nombre proviene del inglés Hyper Text Markup Language, que significa "lenguaje de marcado de hipertexto".
+<p>Su nombre proviene del inglés <i>Hyper Text Markup Language</i>, que significa "lenguaje de marcado de hipertexto".
 HTML no se considera un lenguaje de programación como los demás y ya sabrás por qué.
 
-Imagínate una página web, como la que estás leyendo ahora mismo. Puedes ver que hay varios elementos separados, como encabezado, título, párrafos, imágenes y tantos otros. Toda la organización de estos elementos se realiza mediante HTML. Se utiliza para crear toda la estructura de la página y, para ello, utiliza las famosas tags (etiquetas) para indicar dónde se implementará cada tipo de elemento.
+Imagínate una página web, como la que estás leyendo ahora mismo. Puedes ver que hay varios elementos separados, como encabezado, título, párrafos, imágenes y tantos otros. Toda la organización de estos elementos se realiza mediante HTML. 
+Se utiliza para crear toda la estructura de la página y, para ello, utiliza las famosas etiquetas, en inglés <i>tag</i>, para indicar dónde se implementará cada tipo de elemento.
 
-Eexisten varias tags de diferentes estructuras para ensamblar el esqueleto de la página
+Existen varios tags de diferentes estructuras para ensamblar el esqueleto de la página.
+
+<b>Para este Challenge solo hemos realizado pequeñas variaciones en el archivo index.html proporcionado, como por ejemplo reorganizar los archivos de imágenes, javascript y css en sus respectivas carpetas.</b>
 </p>
 
-<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
+<p align="center"><img src="assets/imagen_archivo_html_head.png"></p>
 
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-LISTO-green"></p>
 
 <h2>Descripción del archivo CSS</h2>
 
 <p>CSS se encarga del diseño y la presentación</p>
 
 <p>
-Cascading Style Sheet, más conocido como CSS, es un lenguaje de estilos que, como HTML, tampoco se considera un lenguaje de programación. Es la encargada de separar la parte estructural de la aplicación (que estará en manos de HTML) de la parte estética.
+<i>Cascading Style Sheet</i>, traducido como “hoja de estilo en cascada” y más conocido como CSS, es un lenguaje de estilos que, como HTML, tampoco se considera un lenguaje de programación. Es la encargada de separar la parte estructural de la aplicación (que estará en manos de HTML) de la parte estética.
 
 Para usar CSS, usamos la siguiente sintaxis:
 
-<code style="font-family: monospace; font-size: 12px; gap: 10px;display: block;overflow-x: auto;padding: .5em;color: #383a42;background: #fafafa;";>
-selector {  
+<code style="font-family: monospace;font-size: 12px;gap: 10px;display: block;overflow-x: auto;padding: .5em;color: #383a42;background: #fafafa;">
+  selector {  
     propiedad: valor;
-}
+  }
 </code>
 
-El selector será el elemento que queramos estilizar (podría ser una tag, una clase, un identificador ...), la propiedad será lo que vamos a cambiar (como color, tamaño de fuente, ancho ...) y el valor será realmente el cambio (como: rojo para color, 18px para tamaño de fuente, y así por delante).
+El selector será el elemento que queramos estilizar (podría ser una tag, una clase, un identificador, etc), la propiedad será lo que vamos a cambiar (como color, tamaño de fuente, ancho ...) y el valor será realmente el cambio (como: rojo para color, 18px para tamaño de fuente, y así por delante).
 
-Entonces, cuando usamos una tag HTML como la tag <p> que usamos como ejemplo anterior, podemos diseñarla de la siguiente manera:
+CSS se puede escribir dentro del archivo HTML, usando el estilo como elemento <style> o como atributo de algún otro elemento <p style="">. También se puede escribir en un archivo separado, solo CSS, importándolo al documento HTML por lo general dentro del <head> de este archivo.
 
-p {  
-    color: blue;
-}
-Con eso, todos los párrafos se volverán azules.
+Algo muy importante a destacar es la posibilidad de utilizar más de un archivo CSS al mismo tiempo, para estilizar la aplicación. De ahí la palabra "cascada". Esto permite varias interacciones diferentes, pero debes tener cuidado de no perderte y confundir el código, siempre siguiendo las reglas para esto.
 
-Un dato más interesante: si traducimos el nombre de esta tecnología, tendremos “hoja de estilo en cascada”. ¿Qué significa eso?
-
-CSS se puede escribir dentro del archivo HTML, usando el estilo como elemento <style> o como atributo de algún otro elemento <p style="">. También se puede escribir en un archivo separado, solo CSS, importándolo al documento HTML de la siguiente manera:
-
-
-Sin embargo, algo muy importante a destacar es la posibilidad de utilizar más de un archivo CSS al mismo tiempo, para estilizar la aplicación. De ahí la palabra "cascada". Esto permite varias interacciones diferentes, pero debes tener cuidado de no perderte y confundir el código, siempre siguiendo las reglas para esto.
-
-
+<b>Para este Challenge solo hemos realizado pequeñas variaciones en el css proporcionado, como por ejemplo las propiedades para hacer la página portable o visible correctamente en un celular</b>
 </p>
 
+<p align="center"><img src="assets/imagen_archivo_css_media.png"></p>
 
-<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-LISTO-green"></p>
 
 
 <h2>Descripción del archivo JS</h2>
 
 <p>JavaScript se utiliza para añadir interacción y dinamismo</p>
 
-<p></p>
+<p>
 
-<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-NO%20INICIADO-red"></p>
+</p>
+
+<p align="center"><img src="assets/imagen_archivo_javascript.png"></p>
+
+<p align="left"><img src="https://img.shields.io/badge/STATUS:%20-EN%20DESAROLLO-yellow"></p>
 
 
 <i>Fuente: https://www.aluracursos.com/blog/html-css-javascript-cuales-son-las-diferencias</i>

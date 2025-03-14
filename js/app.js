@@ -45,6 +45,8 @@ function agregarAmigo() {
   }
 
   if ((typeof nombre === 'string') && (nombre !== null && nombre !== '')) {
+
+    nombre = convertir(nombre);
     if (!amigos.includes(nombre)) {
       amigos.push(nombre);
       console.log(`El amigo agregado se llama ${nombre} y ocupa la posición ${amigos.length}`);
@@ -57,13 +59,6 @@ function agregarAmigo() {
     alert("¡Por favor, ingrese un nombre!");
   }
 
-  return;
-}
-
-/* Reutilización de funciones de otros ejercicios */
-function asignarTextoElemento(elemento, texto) {
-  let elementoHTML = document.getElementById(elemento);
-  elementoHTML.innerHTML = texto;
   return;
 }
 
@@ -129,5 +124,24 @@ function sortearAmigo() {
   return;
 }
 
+/* 2025-03-06_IV: Reutilización de funciones de otros ejercicios */
+function asignarTextoElemento(elemento, texto) {
+  let elementoHTML = document.getElementById(elemento);
+  elementoHTML.innerHTML = texto;
+  return;
+}
+
+/* 2025-03-06_IV: Esta función me la recomendó un amigo (aún la estoy estudiando para entender, pero funciona bien) */
+function convertir(nombre) {
+  // Pasamos el texto recibido y conviertes todos los caracteres a minúscula
+  var cadena = nombre.toLowerCase().split(' ');
+  // console.log("Imprimimos la cadena spliteada: " + cadena);
+  for (var i = 0; i < cadena.length; i++) {
+    cadena[i] = cadena[i].charAt(0).toUpperCase() + cadena[i].substring(1);
+  }
+  nombre = cadena.join(' ');
+  // console.log("Imprimimos el nombre luego de hacer join a la cadena: " + nombre);
+  return nombre;
+}
 
 // 2025-02-07_IV: EOF (Fin de Archivo)
