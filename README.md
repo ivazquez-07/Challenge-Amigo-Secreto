@@ -108,7 +108,15 @@ Algo muy importante a destacar es la posibilidad de utilizar más de un archivo 
 <p>JavaScript se utiliza para añadir interacción y dinamismo</p>
 
 <p>
+Javascript, es el único lenguaje de programación de las 3 tecnologías mencionadas.
 
+Las funcionalidades dinámicas que vemos cuando abrimos un sitio web lo hace Javascript. Agrega movimiento a las páginas web, además de permitir el procesamiento y transformación de los datos enviados y recibidos. Te permite crear contenidos que se actualizan de forma dinámica y animada, dando vida a aplicaciones que antes solo estaban estructuradas estáticamente con HTML.
+
+Al igual que CSS, Javascript se puede escribir dentro del código HTML utilizando el tag <i style="font-family: monospace;">script</i> o bien como en un archivo separado, importándose dentro del atributo de ese mismo elemento (por lo general añadido al final de archivo HTML en el body)
+
+Algo importante a tener en cuenta es que este lenguaje se puede utilizar tanto en el lado del cliente como en el lado del servidor, utilizando tecnologías necesarias para ello, como Node.js.
+
+<b>Para este Challenge además de implementar las funciones de agregarAmigo() y sortearAmigo() solicitadas como requerimiento de este Challenge, se agregaron funciones que permiten por ejemplo introducir con el teclado los nombres al presionar enter sin necesidad de utilizar el mouse o hacer tab al botón de agregar amigo. También se aplicaron validaciones a los nombres para evitar que se ingresaran nombres nulos, con espacios en blanco al comienzo o al final y también se valida si un nombre ya existe en la lista. En este último caso es para evitar que si tenemos dos amigos con el mismo nombre haya alguna confusión con lo cuál el usuario podría agregar el segundo nombre o el apellido o la inicial del mismo. Se trabajó también para conseguir que los nombres queden con el formato de primera letra en mayúsculas y las restantes en minúsculas.</b>
 </p>
 
 <p align="center"><img src="assets/imagen_archivo_javascript.png"></p>

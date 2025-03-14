@@ -82,6 +82,8 @@ function mostrarLista() {
     document.getElementById('listaAmigos').appendChild(listElement);
   }
 
+  document.getElementById('amigo').focus();
+
   return;
 }
 
@@ -142,6 +144,27 @@ function convertir(nombre) {
   nombre = cadena.join(' ');
   // console.log("Imprimimos el nombre luego de hacer join a la cadena: " + nombre);
   return nombre;
+}
+
+/* 2025-03-13_IV: Este código lo venía trabajando y acá encontré un muy buen ejemplo que lo hace mejor aún 
+ 
+https://www.tutorialspoint.com/javascript-submit-textbox-on-pressing-enter 
+
+https://es.stackoverflow.com/questions/398152/como-activar-la-tecla-enter-en-cada-input-de-un-formulario-responsive-cuando-se
+
+ */
+//accedemos al input y agregamos el evento keypress
+document.querySelector('#amigo').addEventListener ('keypress',function(e){
+  validar(e);
+})
+//funcion para validar se haya pulsado enter incluyendo dispositivos moviles
+function validar(e) {
+  const allElements = document.querySelectorAll("*");
+  let tecla = (allElements) ? e.keyCode : e.which;
+  if (tecla===13) {
+    //alert ('Has pulsado enter');
+    agregarAmigo();
+  }
 }
 
 // 2025-02-07_IV: EOF (Fin de Archivo)
